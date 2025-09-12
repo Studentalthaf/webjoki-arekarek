@@ -341,17 +341,30 @@ export default function Home() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const message = `Halo, saya ingin menggunakan jasa JOKI TUGAS.
+    // Validasi form
+    if (!formData.nama || !formData.nomorTelepon || !formData.email || !formData.permintaan) {
+      alert('Mohon lengkapi semua field yang wajib diisi!');
+      return;
+    }
+    
+    const message = `Halo! Saya tertarik dengan layanan JOKI TUGAS 🎓
 
-*Detail Permintaan:*
-- Nama: ${formData.nama}
-- Nomor Telepon: ${formData.nomorTelepon}
-- Email: ${formData.email}
-- Permintaan: ${formData.permintaan}
+📝 *Detail Informasi Saya:*
+👤 Nama: ${formData.nama}
+📞 No. Telepon: ${formData.nomorTelepon}
+📧 Email: ${formData.email}
 
-Mohon informasi lebih lanjut mengenai layanan dan harga. Terima kasih!`;
+📋 *Detail Permintaan:*
+${formData.permintaan}
 
-    const whatsappUrl = `https://wa.me/626289898966282?text=${encodeURIComponent(message)}`;
+Mohon informasi lebih lanjut mengenai:
+• Harga dan paket yang tersedia
+• Timeline pengerjaan
+• Proses kerja sama
+
+Terima kasih! 🙏`;
+
+    const whatsappUrl = `https://wa.me/6281235000291?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -798,7 +811,7 @@ Mohon informasi lebih lanjut mengenai layanan dan harga. Terima kasih!`;
                     value={formData.nomorTelepon}
                     onChange={handleInputChange}
                     className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-white/60 transition-all duration-300"
-                    placeholder="08xxxxxxxxxx"
+                    placeholder="+62 8xx-xxxx-xxxx"
                   />
                 </div>
               </div>
@@ -841,7 +854,7 @@ Mohon informasi lebih lanjut mengenai layanan dan harga. Terima kasih!`;
                   className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-bold text-lg hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 transform"
                 >
                   <span className="mr-3 text-2xl group-hover:scale-110 transition-transform">💬</span>
-                  Chat via WhatsApp Sekarang
+                  Buka WhatsApp & Kirim Pesan
                   <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -863,7 +876,7 @@ Mohon informasi lebih lanjut mengenai layanan dan harga. Terima kasih!`;
                 </div>
                 
                 <p className="text-sm text-white/60 mt-4 max-w-md mx-auto">
-                  Dengan klik tombol di atas, Anda akan diarahkan ke WhatsApp dengan template pesan yang sudah terisi otomatis
+                  Klik tombol di atas untuk membuka WhatsApp dengan pesan yang sudah terisi berdasarkan informasi Anda
                 </p>
               </div>
             </form>
@@ -876,7 +889,7 @@ Mohon informasi lebih lanjut mengenai layanan dan harga. Terima kasih!`;
                 <span className="text-white text-2xl">📱</span>
               </div>
               <h3 className="text-white font-bold mb-2">WhatsApp</h3>
-              <p className="text-white/80 text-sm"></p>
+              <p className="text-white/80 text-sm">+62 812-3500-0291</p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20">
@@ -920,7 +933,7 @@ Mohon informasi lebih lanjut mengenai layanan dan harga. Terima kasih!`;
               
               <div className="flex space-x-4">
                 <a 
-                  href="https://wa.me/626289989668282" 
+                  href="https://wa.me/6281235000291" 
                   className="group inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   <span className="mr-2">📱</span>
@@ -956,7 +969,7 @@ Mohon informasi lebih lanjut mengenai layanan dan harga. Terima kasih!`;
               <div className="space-y-4">
                 <div className="flex items-center text-gray-300">
                   <span className="text-green-400 mr-3">📱</span>
-                  <span>Echa</span>
+                  <span>+62 812-3500-0291</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <span className="text-blue-400 mr-3">⏰</span>
