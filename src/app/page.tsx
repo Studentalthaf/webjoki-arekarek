@@ -529,7 +529,7 @@ Terima kasih! 🙏`;
               features={[
                 "Metodologi tepat",
                 "Bimbingan intensif",
-                "Revisi unlimited",
+                "Tanpa biaya tambahan revisi",
                 "Konsultasi berkala"
               ]}
             />
@@ -589,7 +589,7 @@ Terima kasih! 🙏`;
               title="Premium"
               price="Rp 500K-2Jt+"
               features={[
-                "Joki skripsi/thesis",
+                "Joki skripsi",
                 "Web development advanced",
                 "Research mendalam",
                 "Metodologi lengkap",
