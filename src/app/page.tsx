@@ -578,7 +578,7 @@ Terima kasih! 🙏`;
               features={[
                 "Tugas kompleks",
                 "PPT advanced (20+ slide)",
-                "Revisi unlimited",
+                "Revisi tanpa biaya tambahan",
                 "Pengerjaan 3-5 hari",
                 "Konsultasi via WA"
               ]}
