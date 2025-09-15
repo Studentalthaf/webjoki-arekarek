@@ -364,7 +364,7 @@ Mohon informasi lebih lanjut mengenai:
 
 Terima kasih! 🙏`;
 
-    const whatsappUrl = `https://wa.me/6281235000291?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/628998966282?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -794,7 +794,7 @@ Terima kasih! 🙏`;
                     required
                     value={formData.nama}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-white/60 transition-all duration-300"
+                    className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-black placeholder-white/60 transition-all duration-300"
                     placeholder="Masukkan nama lengkap Anda"
                   />
                 </div>
@@ -810,7 +810,7 @@ Terima kasih! 🙏`;
                     required
                     value={formData.nomorTelepon}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-white/60 transition-all duration-300"
+                    className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-black placeholder-white/60 transition-all duration-300"
                     placeholder="+62 8xx-xxxx-xxxx"
                   />
                 </div>
@@ -827,7 +827,7 @@ Terima kasih! 🙏`;
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-white/60 transition-all duration-300"
+                  className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-black placeholder-white/60 transition-all duration-300"
                   placeholder="email@example.com"
                 />
               </div>
@@ -843,7 +843,7 @@ Terima kasih! 🙏`;
                   rows={5}
                   value={formData.permintaan}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-white/60 transition-all duration-300 resize-none"
+                  className="w-full px-4 py-4 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-black placeholder-white/60 transition-all duration-300 resize-none"
                   placeholder="Jelaskan detail tugas yang ingin Anda kerjakan, deadline, requirements khusus, dan informasi lainnya yang relevan..."
                 />
               </div>
@@ -889,7 +889,7 @@ Terima kasih! 🙏`;
                 <span className="text-white text-2xl">📱</span>
               </div>
               <h3 className="text-white font-bold mb-2">WhatsApp</h3>
-              <p className="text-white/80 text-sm">+62 812-3500-0291</p>
+              <p className="text-white/80 text-sm">Echa</p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center border border-white/20">
@@ -933,7 +933,7 @@ Terima kasih! 🙏`;
               
               <div className="flex space-x-4">
                 <a 
-                  href="https://wa.me/6281235000291" 
+                  href="https://wa.me/628998966282" 
                   className="group inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   <span className="mr-2">📱</span>
@@ -969,7 +969,7 @@ Terima kasih! 🙏`;
               <div className="space-y-4">
                 <div className="flex items-center text-gray-300">
                   <span className="text-green-400 mr-3">📱</span>
-                  <span>+62 812-3500-0291</span>
+                  <span>Echa</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <span className="text-blue-400 mr-3">⏰</span>
