@@ -953,7 +953,7 @@ Terima kasih! 🙏`;
                   "📊 PowerPoint Professional",
                   "📝 Tugas Harian & Project",
                   "💻 Web Development",
-                  "🎓 Joki Skripsi & Thesis",
+                  "🎓 Joki Skripsi ",
                   "📄 Research & Analysis",
                   "🎨 Design Grafis"
                 ].map((service, index) => (
